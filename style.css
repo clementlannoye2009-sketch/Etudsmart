@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #388E3C;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#filter-container {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+select {
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 1px solid #4CAF50;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+select:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+ul li {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+    width: calc(50% - 15px);
+}
+
+ul li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ul li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    text-align: center;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#rendezvous a {
+    display:inline-block;
+    padding:12px 25px;
+    background-color:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:600;
+    transition: all 0.3s;
+}
+
+#rendezvous a:hover {
+    background-color:#388E3C;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #eee;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px){
+    ul li {
+        width: 100%;
+    }
+}
