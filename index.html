@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RéviSmart - Révisions & Aide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RéviSmart</h1>
+        <p>Révisions & Aide personnalisée</p>
+    </header>
+
+    <nav>
+        <a href="#fiches">Fiches de révision</a>
+        <a href="#rendezvous">Prendre rendez-vous</a>
+    </nav>
+
+    <main>
+        <section id="fiches">
+            <h2>Fiches de révision</h2>
+
+            <div id="filter-container">
+                <label for="filter">Filtrer par matière :</label>
+                <select id="filter">
+                    <option value="all">Toutes</option>
+                    <option value="math">Mathématiques</option>
+                    <option value="francais">Français</option>
+                    <option value="histoire">Histoire</option>
+                </select>
+            </div>
+
+            <ul id="fiches-list">
+                <li data-matiere="math"><a href="fiches/math.pdf" target="_blank">Mathématiques</a></li>
+                <li data-matiere="francais"><a href="fiches/francais.pdf" target="_blank">Français</a></li>
+                <li data-matiere="histoire"><a href="fiches/histoire.pdf" target="_blank">Histoire</a></li>
+                <li data-matiere="math"><a href="fiches/algebre.pdf" target="_blank">Algèbre</a></li>
+                <li data-matiere="francais"><a href="fiches/grammaire.pdf" target="_blank">Grammaire</a></li>
+            </ul>
+        </section>
+
+        <section id="rendezvous">
+            <h2>Prendre rendez-vous</h2>
+            <p>Pour une aide personnalisée, prenez rendez-vous ici :</p>
+            <a href="https://calendly.com/ton-lien" target="_blank">Réserver un créneau</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 RéviSmart
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
